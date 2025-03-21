@@ -1,4 +1,4 @@
-Simple use of Antlr with a short grammar specification. Mostly to demonstrate to myself an Antlr deployment, as well as after generating its code, how to integrate with it. The following grammar just implements a line of SQL to `SELECT column FROM table`. The lower case declarations are for the parser, while upper case is for the lexer.
+Simple use of Antlr with a short grammar specification. Primarily to demonstrate to myself an Antlr deployment, as well as after generating its code, how to integrate with it. The following grammar just implements a line of SQL to `SELECT column FROM table`. The grammar file combines both parser and lexer: lower case declarations for the parser, while upper case for the lexer.
 
 ```
 grammar SQLo;
@@ -30,7 +30,7 @@ Along with a sample query test.sql file...
 SELECT name FROM juice
 ```
 
-We then have code that extends the visitor for the "table" callback, which will print out
+We then have code that extends the visitor for the "table" callback, which will print out,
 
 ```
 juice
