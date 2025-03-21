@@ -1,4 +1,4 @@
-A relatively simple deployment of Antlr with a short grammar specification:
+Simple use of Antlr with a short grammar specification. Mostly to demonstrate to myself an Antlr deployment, as well as after generating its code, how to integrate with it. The following grammar just implements a line of SQL to `SELECT column FROM table`. The lower case declarations are for the parser, while upper case is for the lexer.
 
 ```
 grammar SQLo;
@@ -24,17 +24,18 @@ WS
     ;
 ```
 
-Along with a sample test.sql file
+Along with a sample query test.sql file...
 
 ```
 SELECT name FROM juice
 ```
 
-We then have code that extends the visitor, detecting the "table" callback, then printing out:
+We then have code that extends the visitor for the "table" callback, which will print out
 
 ```
 juice
 ```
+
 Screenshot of the sample parse in IntelliJ's Antlr plugin:
 
 <img width="574" alt="antlr simple" src="https://github.com/user-attachments/assets/6c4a6b8a-2ffe-4d46-817e-26b637f0afc9" />
