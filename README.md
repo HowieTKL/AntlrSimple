@@ -35,3 +35,6 @@ We then have code that extends the visitor, detecting the "table" callback, then
 ```
 juice
 ```
+Screenshot of the sample parse in IntelliJ's Antlr plugin:
+
+<img width="574" alt="antlr simple" src="https://github.com/user-attachments/assets/6c4a6b8a-2ffe-4d46-817e-26b637f0afc9" />
