@@ -1,6 +1,7 @@
 plugins {
     id("java")
     antlr
+    application
 }
 
 group = "org.howietkl"
@@ -18,4 +19,8 @@ dependencies {
 
 tasks.test {
     useJUnitPlatform()
+}
+
+application {
+    mainClass = "org.howietkl.Main"
 }
